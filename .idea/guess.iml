@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" packagePrefix="Determine" />
+      <excludeFolder url="file://$MODULE_DIR$/bootstrap/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/storage" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/determine/dtrm-util/tests" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="html5shiv" level="application" />
+    <orderEntry type="library" name="respond" level="application" />
+    <orderEntry type="library" name="jquery.validate" level="application" />
+    <orderEntry type="library" name="additional-methods" level="application" />
+  </component>
+</module>

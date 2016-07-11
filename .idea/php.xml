@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpProjectServersManager">
+    <servers>
+      <server host="guess.3wipes.com" id="9ad1e4e6-3235-4c8c-b6c4-4b9ca9143ae5" name="guess.3wipes.com" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="/opt/determine/src/service/guess" />
+        </path_mappings>
+      </server>
+    </servers>
+  </component>
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings load_method="CUSTOM_LOADER" configuration_file_path="$PROJECT_DIR$/phpunit.xml" custom_loader_path="$PROJECT_DIR$/composer.json" phpunit_phar_path="" use_configuration_file="true" />
+    </phpunit_settings>
+  </component>
+</project>

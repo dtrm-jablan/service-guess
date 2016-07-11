@@ -1,0 +1,81 @@
+{
+	"name":              "determine/guess",
+	"description":       "Global Unified ElasticSearch Service",
+	"keywords":          [
+		"elasticsearch",
+		"determine",
+		"p2p"
+	],
+	"license":           "proprietary",
+	"type":              "library",
+	"repositories":      [
+		{
+			"type":    "package",
+			"package": {
+				"name":     "determine/dtrm-util",
+				"version":  "1.0.x-dev",
+				"dist":     {
+					"type": "path",
+					"url":  "/opt/determine/lib/dtrm-util/"
+				},
+				"source":   {
+					"type":      "path",
+					"url":       "/opt/determine/lib/dtrm-util/",
+					"reference": ""
+				},
+				"autoload": {
+					"classmap": "src/"
+				}
+			}
+		}
+	],
+	"minimum-stability": "dev",
+	"require":           {
+		"php":                         ">=5.5.9",
+		"laravel/framework":           "5.2.*",
+		"determine/dtrm-util":         "1.0.*@dev",
+		"elasticsearch/elasticsearch": "~2.0",
+		"barryvdh/laravel-ide-helper": "*"
+	},
+	"require-dev":       {
+		"fzaninotto/faker":     "~1.4",
+		"mockery/mockery":      "0.9.*",
+		"phpunit/phpunit":      "~4.0",
+		"doctrine/dbal":        "~2.5",
+		"symfony/css-selector": "2.8.*|3.0.*",
+		"symfony/dom-crawler":  "2.8.*|3.0.*"
+	},
+	"autoload":          {
+		"classmap": [
+			"database"
+		],
+		"psr-4":    {
+			"Determine\\Service\\Guess\\":    "app/",
+			"Determine\\Library\\Utility\\": "vendor/determine/dtrm-util/src/"
+		}
+	},
+	"autoload-dev":      {
+		"classmap": [
+			"tests/TestCase.php"
+		]
+	},
+	"scripts":           {
+		"post-install-cmd": [
+			"Illuminate\\Foundation\\ComposerScripts::postInstall",
+			"php artisan optimize"
+		],
+		"post-update-cmd":  [
+			"Illuminate\\Foundation\\ComposerScripts::postUpdate",
+			"php artisan clear-compiled",
+			"php artisan cache:clear",
+			"php artisan config:clear",
+			"php artisan route:clear",
+			"php artisan ide-helper:generate",
+			"php artisan optimize",
+			"php artisan vendor:publish --tag=public --force"
+		]
+	},
+	"config":            {
+		"preferred-install": "dist"
+	}
+}
