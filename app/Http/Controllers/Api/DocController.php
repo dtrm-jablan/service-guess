@@ -101,14 +101,15 @@ class DocController extends StaticClientController
      * @param \Illuminate\Http\Request $request
      * @param string                   $index
      * @param string                   $type
+     * @param array|null               $seeds
      *
      * @return \Illuminate\Http\JsonResponse
      */
-    public function seed(Request $request, $index, $type)
+    public function seed(Request $request, $index, $type, $seeds = null)
     {
         logger('[api.suggest] "seed" request received', ['index' => $index, 'type' => $type]);
 
-        if (empty($_data = $this->getContent($request))) {
+        if (empty($_data = $seeds ?: $this->getContent($request))) {
             \Log::error('[api.suggest] "seed" request payload bogus', ['index' => $index, 'type' => $type]);
 
             return $this->respondWithError('No content received', Response::HTTP_BAD_REQUEST);

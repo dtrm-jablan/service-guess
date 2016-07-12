@@ -12,6 +12,7 @@
       <w>smtp</w>
       <w>sparkpost</w>
       <w>unparseable</w>
+      <w>unregister</w>
     </words>
   </dictionary>
 </component>

@@ -26,16 +26,18 @@ class SuggestController extends StaticIndicesController
      * @param \Illuminate\Http\Request $request
      * @param string                   $index The name of the index (i.e. customer ID, "SPH_I")
      * @param string                   $type  The type of the document (i.e. table name, "DEPARTMENT")
+     * @param array|null               $properties
      *
      * @return \Illuminate\Http\Response|mixed
      */
-    public function create(Request $request, $index, $type)
+    public function create(Request $request, $index, $type, $properties = null)
     {
         $_base = ['index' => $index];
+        $_data = $properties ?: $this->getContent($request);
 
-        logger('[api.suggest] "create" request received', ['index' => $index, 'type' => $type]);
+        logger('[api.suggest] "create" request received', ['index' => $index, 'type' => $type, 'properties' => $properties]);
 
-        if (false === ($_data = $this->getContent($request))) {
+        if (empty($_data)) {
             logger('[api.suggest] "create" request payload bogus', ['index' => $index, 'type' => $type]);
 
             return $this->respondWithError('No content received', Response::HTTP_BAD_REQUEST);
@@ -50,7 +52,6 @@ class SuggestController extends StaticIndicesController
                 logger('[api.suggest] "create" request: index "' . $index . '" created');
             } else {
                 logger('[api.suggest] "create" request: index "' . $index . '" exists');
-
             }
         } catch (\Exception $_ex) {
             return $this->respondWithError('Cannot create index "' . $index . '"', Response::HTTP_INTERNAL_SERVER_ERROR);

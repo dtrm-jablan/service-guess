@@ -601,12 +601,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "f8f41d3e06d1292a835f1c166bf0bf8fac794136"
+                "reference": "65589c8ee467025eca2dffe9ca85c8ff7d5ab4fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/f8f41d3e06d1292a835f1c166bf0bf8fac794136",
-                "reference": "f8f41d3e06d1292a835f1c166bf0bf8fac794136",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/65589c8ee467025eca2dffe9ca85c8ff7d5ab4fa",
+                "reference": "65589c8ee467025eca2dffe9ca85c8ff7d5ab4fa",
                 "shasum": ""
             },
             "require": {
@@ -723,7 +723,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2016-07-08 20:11:36"
+            "time": "2016-07-12 13:55:49"
         },
         {
             "name": "league/flysystem",
@@ -932,16 +932,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "1.21.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "7b08ec6f75791e130012f206e3f7b0e76e18e3d7"
+                "reference": "36c134b53c21a137d450c86a27046022d98574fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/7b08ec6f75791e130012f206e3f7b0e76e18e3d7",
-                "reference": "7b08ec6f75791e130012f206e3f7b0e76e18e3d7",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/36c134b53c21a137d450c86a27046022d98574fd",
+                "reference": "36c134b53c21a137d450c86a27046022d98574fd",
                 "shasum": ""
             },
             "require": {
@@ -952,6 +952,11 @@
                 "phpunit/phpunit": "~4.0|~5.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.22-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Carbon\\": "src/Carbon/"
@@ -975,7 +980,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2015-11-04 20:07:17"
+            "time": "2016-06-27 17:44:29"
         },
         {
             "name": "nikic/php-parser",
