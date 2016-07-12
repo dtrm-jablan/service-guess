@@ -25,71 +25,7 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f98961c1-c0f2-4f62-aecc-dc991c374bf9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/seeds/department.dump.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Http/Controllers/Api/sample.error.response.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Http/Controllers/Api/suggest.config.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/ArrayUtils.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Cors.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/CorsEntry.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Curl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/DataReader.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/DataShaper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Disk.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Enums/DataShapes.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Enums/DateTimeIntervals.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Enums/DeploymentLocations.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Enums/FactoryEnum.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Enums/GlobFlags.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Enums/Limits.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Enums/Verbs.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Environment.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Exceptions/DiskException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Exceptions/FileException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Exceptions/FileSystemException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Facades/BaseFacade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/File.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/FileSystem.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Flasher.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Hasher.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/IfSet.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Includer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Inflector.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Interfaces/EnvironmentProviderLike.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Interfaces/ResourceLocatorLike.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Interfaces/ShapesData.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Json.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/JsonFile.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Laravel.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Profiler.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Providers/BaseServiceProvider.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Providers/InspectionServiceProvider.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Roller.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Scalar.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Services/InspectionService.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Shapers/JsonShape.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Shapers/MediaWikiTableShape.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Shapers/XmlShape.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Sql.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Traits/FileManager.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/Uri.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Utility/src/WorkPath.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/database/seeds/department.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/database/seeds/dpt.json" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/GetController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/DocController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/SuggestControllerTest.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/SuggestControllerTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/SuggestController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/SuggestController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/BaseController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/BaseController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/StaticClientController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/StaticClientController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Http/Controllers/Api/SuggestControllerTest.php" afterPath="$PROJECT_DIR$/tests/Http/Controllers/Api/SuggestControllerTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/TestCase.php" afterPath="$PROJECT_DIR$/tests/TestCase.php" />
-    </list>
+    <list default="true" id="f98961c1-c0f2-4f62-aecc-dc991c374bf9" name="Default" comment="" />
     <ignored path="guess.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -388,7 +324,7 @@
       <workItem from="1467902052867" duration="18569000" />
       <workItem from="1468112912473" duration="746000" />
       <workItem from="1468179368378" duration="5342000" />
-      <workItem from="1468255919781" duration="15135000" />
+      <workItem from="1468255919781" duration="15202000" />
     </task>
     <servers />
   </component>
@@ -425,7 +361,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53600000" />
+    <option name="totallyTimeSpent" value="53667000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1602" height="875" extended-state="6" />
