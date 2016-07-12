@@ -1,0 +1,56 @@
+{
+    "search":     {
+        "test_xyz-suggest": {
+            "text":       "f",
+            "completion": {
+                "field": "lookup_suggest"
+            }
+        }
+    },
+    "properties": {
+        "name":        {
+            "type": "string"
+        },
+        "code":        {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        }
+    },
+    "seeds":      [
+        {
+            "id":             "1",
+            "name":           "Finance Operation & Services",
+            "code":           "1671",
+            "description":    null,
+            "lookup_suggest": {
+                "input": [
+                    "Finance Operation & Services"
+                ]
+            }
+        },
+        {
+            "id":             "2",
+            "name":           "OFSV - Office Services",
+            "code":           "1632",
+            "description":    null,
+            "lookup_suggest": {
+                "input": [
+                    "OFSV - Office Services"
+                ]
+            }
+        },
+        {
+            "id":             "3",
+            "name":           "ITDADM - Admin",
+            "code":           "1690",
+            "description":    null,
+            "lookup_suggest": {
+                "input": [
+                    "ITDADM - Admin"
+                ]
+            }
+        }
+    ]
+}

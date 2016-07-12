@@ -5,6 +5,7 @@ use Determine\Service\Guess\Utility\Client;
 use Determine\Service\Guess\Utility\ClientBuilder;
 use Elasticsearch\Common\Exceptions\BadRequest400Exception;
 use Elasticsearch\Common\Exceptions\ElasticsearchException;
+use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
 class StaticClientController extends BaseController
@@ -77,5 +78,26 @@ class StaticClientController extends BaseController
 
             return $this->respondWithError($_ex->getMessage(), $_code);
         }
+    }
+
+    /**
+     * Get's the posted/put content
+     *
+     * @param \Illuminate\Http\Request $request
+     *
+     * @return bool|array
+     */
+    protected function getContent(Request $request)
+    {
+        if (is_array($_data = $request->getContent())) {
+            return $_data;
+        }
+
+        if (is_string($_data) && false !== ($_decoded = json_decode($_data, true)) && !empty($_decoded)) {
+            return $_decoded;
+        }
+
+        //  No clue
+        return false;
     }
 }

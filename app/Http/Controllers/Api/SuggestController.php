@@ -7,27 +7,50 @@ use Illuminate\Http\Response;
 class SuggestController extends StaticIndicesController
 {
     //******************************************************************************
+    //* Constants
+    //******************************************************************************
+
+    /**
+     * @var string
+     */
+    const SUGGEST_FIELD = 'lookup_suggest';
+
+    //******************************************************************************
     //* Methods
     //******************************************************************************
 
     /**
+     * Create a new suggester
+     * Creates a mapping on an index for completion
+     *
      * @param \Illuminate\Http\Request $request
-     * @param string                   $index The name of the index
-     * @param string                   $type  The type of the document
+     * @param string                   $index The name of the index (i.e. customer ID, "SPH_I")
+     * @param string                   $type  The type of the document (i.e. table name, "DEPARTMENT")
      *
      * @return \Illuminate\Http\Response|mixed
      */
     public function create(Request $request, $index, $type)
     {
+        $_base = ['index' => $index];
+
         logger('[api.suggest] "create" request received', ['index' => $index, 'type' => $type]);
 
-        $_base = ['index' => $index];
+        if (false === ($_data = $this->getContent($request))) {
+            logger('[api.suggest] "create" request payload bogus', ['index' => $index, 'type' => $type]);
+
+            return $this->respondWithError('No content received', Response::HTTP_BAD_REQUEST);
+        }
+
+        logger('[api.suggest] "create" request parameters', $_data);
 
         try {
             //  Check the index
             if (!static::getClient()->exists($_base)) {
-                $_response = static::getClient()->create(['index' => $index]);
-                logger('[api.suggest] "create" request: index "' . $index . '" created.', $_response);
+                static::getClient()->create(['index' => $index]);
+                logger('[api.suggest] "create" request: index "' . $index . '" created');
+            } else {
+                logger('[api.suggest] "create" request: index "' . $index . '" exists');
+
             }
         } catch (\Exception $_ex) {
             return $this->respondWithError('Cannot create index "' . $index . '"', Response::HTTP_INTERNAL_SERVER_ERROR);
@@ -37,8 +60,7 @@ class SuggestController extends StaticIndicesController
         $_payload = [
             $type => [
                 'properties' => [
-                    'name'    => 'string',
-                    'suggest' => [
+                    static::SUGGEST_FIELD => [
                         'type'            => 'completion',
                         'analyzer'        => 'simple',
                         'search_analyzer' => 'simple',
@@ -48,54 +70,27 @@ class SuggestController extends StaticIndicesController
             ],
         ];
 
-        $_params = array_merge($request->query->all(), $_base, ['type' => $type, 'body' => $_payload]);
-
-        return $this->doCall('putMapping', $_params);
-    }
-
-    /**
-     * @param \Illuminate\Http\Request $request
-     * @param string                   $index
-     * @param string                   $type
-     *
-     * @return \Illuminate\Http\JsonResponse
-     */
-    public function seed(Request $request, $index, $type)
-    {
-        logger('[api.suggest] "seed" request received', ['index' => $index, 'type' => $type]);
-
-        //  The request body should contain a hash of properties
-        if (!is_array($_content = $request->json()) && !empty($_content)) {
-            if (is_string($_content) && false === json_decode($_content)) {
-                logger('[api.suggest] "seed" request content unparseable', ['content' => $_content]);
-                $_content = [];
+        //  Body should have a list of property names and type
+        if (!empty($_data)) {
+            foreach ($_data as $_property => $_type) {
+                array_set($_payload, $type . '.properties.' . $_property, ['type' => $_type]);
             }
         }
 
-        if (empty($_content)) {
-            \Log::error('[api.get] "seed" request content contains no seed data');
+        $_params = array_merge($request->query->all(), $_base, ['type' => $type, 'body' => $_payload]);
+        logger('[api.suggest] "create" request: index "' . $index . '" mapping request', $_payload);
 
-            return $this->respondWithError('No seed data supplied in request', Response::HTTP_BAD_REQUEST);
-        }
+        $_response = $this->doCall('putMapping', $_params);
 
-        $_baseParams = ['index' => $index, 'type' => $type];
-        $_results = [];
+        logger('[api.suggest] "create" request response: ' . $_response->getContent());
 
-        //  Put each seed
-        foreach ($_content as $_seed) {
-            $_id = array_get($_seed, 'id');
-            $_params = $_baseParams;
-            $_id && $_params['id'] = $_id;
-            $_results[] = ['data' => $_seed, 'result' => $this->doCall('put', $_params)];
-        }
-
-        return $this->respond($_results);
+        return $_response;
     }
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param string                   $index
-     * @param string                   $type
+     * @param string                   $index The name of the index (i.e. customer ID, "SPH_I")
+     * @param string                   $type  The type of the document (i.e. table name, "DEPARTMENT")
      *
      * @return \Illuminate\Http\JsonResponse
      */
@@ -103,6 +98,6 @@ class SuggestController extends StaticIndicesController
     {
         logger('[api.suggest] "delete" request received', ['index' => $index, 'type' => $type]);
 
-        return $this->doCall('deleteMapping', ['index' => $index, 'type' => $type]);
+        return $this->respond(['error' => 'Unsupported', 'code' => Response::HTTP_NOT_IMPLEMENTED]);
     }
 }

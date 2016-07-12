@@ -1,0 +1,16 @@
+{
+    "error": {
+        "found":    false,
+        "_index":   "test_index",
+        "_type":    "type_xyz",
+        "_id":      "_mapping",
+        "_version": 2,
+        "_shards":  {
+            "total":      2,
+            "successful": 1,
+            "failed":     0
+        }
+    },
+    "code":  404,
+    "data":  []
+}

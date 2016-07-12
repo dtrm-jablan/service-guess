@@ -9,9 +9,4 @@ use Illuminate\Foundation\Auth\Access\AuthorizesResources;
 class BaseController extends Controller
 {
     use AuthorizesRequests, AuthorizesResources, DispatchesJobs, ValidatesRequests;
-
-    public function __construct()
-    {
-        logger('[controller] ' . get_class($this) . ' instantiated');
-    }
 }

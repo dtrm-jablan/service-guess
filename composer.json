@@ -50,7 +50,8 @@
 			"database"
 		],
 		"psr-4":    {
-			"Determine\\Service\\Guess\\":    "app/",
+			"Determine\\Service\\Guess\\":   "app/",
+			"Determine\\Service\\Tests\\":   "tests/",
 			"Determine\\Library\\Utility\\": "vendor/determine/dtrm-util/src/"
 		}
 	},

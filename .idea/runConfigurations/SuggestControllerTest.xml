@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="SuggestControllerTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" singleton="true">
-    <TestRunner class="Determine\Tests\Http\Controllers\Api\SuggestControllerTest" file="$PROJECT_DIR$/tests/Http/Controllers/Api/SuggestControllerTest.php" scope="Class" />
+    <TestRunner class="Determine\Service\Tests\Http\Controllers\Api\SuggestControllerTest" file="$PROJECT_DIR$/tests/Http/Controllers/Api/SuggestControllerTest.php" scope="Class" />
     <method />
   </configuration>
 </component>

@@ -2,8 +2,9 @@
 
 use Determine\Service\Guess\Http\Controllers\StaticClientController;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
-class GetController extends StaticClientController
+class DocController extends StaticClientController
 {
     //******************************************************************************
     //* Methods
@@ -72,22 +73,65 @@ class GetController extends StaticClientController
      */
     public function suggest(Request $request, $index, $type, $text)
     {
-        logger('[api.doc] "suggest" request received', ['index' => $index]);
+        $_search = $type . '_suggest';
+        $_params = array_merge($request->query->all(),
+            [
+                'body' => [
+                    $_search => [
+                        'text'       => $text,
+                        'completion' => [
+                            'field' => SuggestController::SUGGEST_FIELD,
+                        ],
+                    ],
+                ],
+            ]);
 
-        $_params = [
-            $type . '_suggest' => [
-                'text'       => $text,
-                'completion' => ['field' => 'suggest'],
-            ],
-        ];
+        logger('[api.doc] "suggest" request received', ['index' => $index, 'params' => $_params]);
 
-        array_merge($request->query->all(), $_params);
         $_result = $this->doCall('suggest', $_params, true);
 
-        if (!empty($_suggest = data_get($_result, $type . '_suggest'))) {
+        if (!empty($_suggest = data_get($_result, $_search))) {
             return $this->respond($_suggest);
         }
 
         return $this->respond($_result);
+    }
+
+    /**
+     * @param \Illuminate\Http\Request $request
+     * @param string                   $index
+     * @param string                   $type
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function seed(Request $request, $index, $type)
+    {
+        logger('[api.suggest] "seed" request received', ['index' => $index, 'type' => $type]);
+
+        if (empty($_data = $this->getContent($request))) {
+            \Log::error('[api.suggest] "seed" request payload bogus', ['index' => $index, 'type' => $type]);
+
+            return $this->respondWithError('No content received', Response::HTTP_BAD_REQUEST);
+        }
+
+        $_results = [];
+        $_baseParams = ['index' => $index, 'type' => $type];
+
+        //  Put each seed
+        foreach (array_get($_data, 'seeds', []) as $_seed) {
+            $_params = $_baseParams;
+
+            if (null !== ($_id = array_get($_seed, 'id'))) {
+                array_forget($_seed, 'id');
+                $_params['id'] = $_id;
+            }
+
+            $_params['body'] = $_seed;
+            $_results[] = ['data' => $_seed, 'result' => $this->doCall('create', $_params)];
+
+            unset($_seed, $_params);
+        }
+
+        return $this->respond($_results);
     }
 }

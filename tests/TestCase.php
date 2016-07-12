@@ -1,13 +1,15 @@
 <?php
 
-abstract class TestCase extends Illuminate\Foundation\Testing\TestCase
+use Illuminate\Contracts\Console\Kernel;
+
+abstract class TestCase extends \Illuminate\Foundation\Testing\TestCase
 {
     /**
      * The base URL to use while testing the application.
      *
      * @var string
      */
-    protected $baseUrl = 'http://localhost';
+    protected $baseUrl = 'http://guess.3wipes.com';
 
     /**
      * Creates the application.
@@ -16,10 +18,9 @@ abstract class TestCase extends Illuminate\Foundation\Testing\TestCase
      */
     public function createApplication()
     {
-        $app = require __DIR__.'/../bootstrap/app.php';
+        $_app = require __DIR__ . '/../bootstrap/app.php';
+        $_app->make(Kernel::class)->bootstrap();
 
-        $app->make(Illuminate\Contracts\Console\Kernel::class)->bootstrap();
-
-        return $app;
+        return $_app;
     }
 }

@@ -1,0 +1,986 @@
+[
+    {
+        "id":          "1",
+        "name":        "Finance Operation & Services",
+        "code":        "1671",
+        "description": ""
+    },
+    {
+        "id":          "2",
+        "name":        "OFSV - Office Services",
+        "code":        "1632",
+        "description": ""
+    },
+    {
+        "id":          "3",
+        "name":        "ITDADM - Admin",
+        "code":        "1690",
+        "description": ""
+    },
+    {
+        "id":          "6",
+        "name":        "Marketing Division",
+        "code":        "MKTG",
+        "description": ""
+    },
+    {
+        "id":          "7",
+        "name":        "HROP - HR Operations + Planning",
+        "code":        "1651",
+        "description": ""
+    },
+    {
+        "id":          "13",
+        "name":        "HRD Division",
+        "code":        "HRD",
+        "description": ""
+    },
+    {
+        "id":          "41",
+        "name":        "FINANCE OPERATIONS",
+        "code":        "SFIAO",
+        "description": "FINANCE OPERATIONS"
+    },
+    {
+        "id":          "26",
+        "name":        "ITD Division",
+        "code":        "ITD",
+        "description": ""
+    },
+    {
+        "id":          "27",
+        "name":        "EMND - English Editorial",
+        "code":        "EMND",
+        "description": ""
+    },
+    {
+        "id":          "28",
+        "name":        "PROD Division",
+        "code":        "PROD",
+        "description": ""
+    },
+    {
+        "id":          "29",
+        "name":        "ADMIN Division",
+        "code":        "ADMIN",
+        "description": ""
+    },
+    {
+        "id":          "30",
+        "name":        "FIN Disvision",
+        "code":        "FIN",
+        "description": ""
+    },
+    {
+        "id":          "40",
+        "name":        "MY PAPER (ENGLISH)",
+        "code":        "SEMMP",
+        "description": "MY PAPER (ENGLISH)"
+    },
+    {
+        "id":          "39",
+        "name":        "CULTURAL INDUSTRY PROMOTION",
+        "code":        "SCNES",
+        "description": "CULTURAL INDUSTRY PROMOTION"
+    },
+    {
+        "id":          "38",
+        "name":        "PURCHASING AND TRAVEL SERVICES",
+        "code":        "SADPT",
+        "description": "PURCHASING AND TRAVEL SERVICES"
+    },
+    {
+        "id":          "34",
+        "name":        "TNPE - The New Paper Editorial",
+        "code":        "1110",
+        "description": ""
+    },
+    {
+        "id":          "35",
+        "name":        "STFO - ST Foreign, Cost Centre",
+        "code":        "1041",
+        "description": ""
+    },
+    {
+        "id":          "37",
+        "name":        "ADMIN SERVICES",
+        "code":        "SADAS",
+        "description": "ADMIN SERVICES"
+    },
+    {
+        "id":          "42",
+        "name":        "GROUP SHARED SERVICES",
+        "code":        "SFISV",
+        "description": "GROUP SHARED SERVICES"
+    },
+    {
+        "id":          "43",
+        "name":        "APPLICATIONS",
+        "code":        "SITAP",
+        "description": "APPLICATIONS"
+    },
+    {
+        "id":          "44",
+        "name":        "24:7 ADVERTORIAL SALES",
+        "code":        "D247AS",
+        "description": "24:7 ADVERTORIAL SALES"
+    },
+    {
+        "id":          "45",
+        "name":        "24:7 BRANDING & PROMOTION",
+        "code":        "D247BP",
+        "description": "24:7 BRANDING & PROMOTION"
+    },
+    {
+        "id":          "46",
+        "name":        "24:7 EDITORIAL",
+        "code":        "D247ED",
+        "description": "24:7 EDITORIAL"
+    },
+    {
+        "id":          "47",
+        "name":        "24:7 PHOTO & ART",
+        "code":        "D247PA",
+        "description": "24:7 PHOTO & ART"
+    },
+    {
+        "id":          "48",
+        "name":        "24:7 PRODUCTION",
+        "code":        "D247PR",
+        "description": "24:7 PRODUCTION"
+    },
+    {
+        "id":          "49",
+        "name":        "FEMALE ADVERTORIAL SALES",
+        "code":        "DFMAS",
+        "description": "FEMALE ADVERTORIAL SALES"
+    },
+    {
+        "id":          "50",
+        "name":        "FEMALE BRIDES ADVERTORIAL SALES",
+        "code":        "DFMBAS",
+        "description": "FEMALE BRIDES ADVERTORIAL SALES"
+    },
+    {
+        "id":          "51",
+        "name":        "FEMALE BRIDES BRANDING & PROMOTION",
+        "code":        "DFMBBP",
+        "description": "FEMALE BRIDES BRANDING & PROMOTION"
+    },
+    {
+        "id":          "52",
+        "name":        "FEMALE BRIDES EDITORIAL",
+        "code":        "DFMBED",
+        "description": "FEMALE BRIDES EDITORIAL"
+    },
+    {
+        "id":          "53",
+        "name":        "FEMALE BRANDING & PROMOTION",
+        "code":        "DFMBP",
+        "description": "FEMALE BRANDING & PROMOTION"
+    },
+    {
+        "id":          "54",
+        "name":        "FEMALE BRIDES PHOTO & ART",
+        "code":        "DFMBPA",
+        "description": "FEMALE BRIDES PHOTO & ART"
+    },
+    {
+        "id":          "55",
+        "name":        "FEMALE BRIDES PRODUCTION",
+        "code":        "DFMBPR",
+        "description": "FEMALE BRIDES PRODUCTION"
+    },
+    {
+        "id":          "56",
+        "name":        "FEMALE EDITORIAL",
+        "code":        "DFMED",
+        "description": "FEMALE EDITORIAL"
+    },
+    {
+        "id":          "57",
+        "name":        "FEMALE PHOTO & ART",
+        "code":        "DFMPA",
+        "description": "FEMALE PHOTO & ART"
+    },
+    {
+        "id":          "58",
+        "name":        "FEMALE PRODUCTION",
+        "code":        "DFMPR",
+        "description": "FEMALE PRODUCTION"
+    },
+    {
+        "id":          "59",
+        "name":        "HERWORLD ADVERTORIAL SALES",
+        "code":        "DHWAS",
+        "description": "HERWORLD ADVERTORIAL SALES"
+    },
+    {
+        "id":          "60",
+        "name":        "HERWORLD BRIDES ADVERTORIAL SALES",
+        "code":        "DHWBAS",
+        "description": "HERWORLD BRIDES ADVERTORIAL SALES"
+    },
+    {
+        "id":          "61",
+        "name":        "HERWORLD BRIDES BRANDING & PROMOTION",
+        "code":        "DHWBBP",
+        "description": "HERWORLD BRIDES BRANDING & PROMOTION"
+    },
+    {
+        "id":          "62",
+        "name":        "HERWORLD BRIDES EDITORIAL",
+        "code":        "DHWBED",
+        "description": "HERWORLD BRIDES EDITORIAL"
+    },
+    {
+        "id":          "63",
+        "name":        "HERWORLD BRANDING & PROMOTION",
+        "code":        "DHWBP",
+        "description": "HERWORLD BRANDING & PROMOTION"
+    },
+    {
+        "id":          "64",
+        "name":        "HERWORLD BRIDES PHOTO & ART",
+        "code":        "DHWBPA",
+        "description": "HERWORLD BRIDES PHOTO & ART"
+    },
+    {
+        "id":          "65",
+        "name":        "HERWORLD BRIDES PRODUCTION",
+        "code":        "DHWBPR",
+        "description": "HERWORLD BRIDES PRODUCTION"
+    },
+    {
+        "id":          "66",
+        "name":        "HERWORLD EDITORIAL",
+        "code":        "DHWED",
+        "description": "HERWORLD EDITORIAL"
+    },
+    {
+        "id":          "67",
+        "name":        "HERWORLD FIT & FAB ADVERTORIAL SALES",
+        "code":        "DHWFFAS",
+        "description": "HERWORLD FIT & FAB ADVERTORIAL SALES"
+    },
+    {
+        "id":          "68",
+        "name":        "HERWORLD FIT & FAB BRANDING & PROMOTION",
+        "code":        "DHWFFBP",
+        "description": "HERWORLD FIT & FAB BRANDING & PROMOTION"
+    },
+    {
+        "id":          "69",
+        "name":        "HERWORLD FIT&FAB EDITORIAL",
+        "code":        "DHWFFED",
+        "description": "HERWORLD FIT&FAB EDITORIAL"
+    },
+    {
+        "id":          "70",
+        "name":        "HERWORLD FIT&FAB PHOTO & ART",
+        "code":        "DHWFFPA",
+        "description": "HERWORLD FIT&FAB PHOTO & ART"
+    },
+    {
+        "id":          "71",
+        "name":        "HERWORLD FIT & FAB PRODUCTION",
+        "code":        "DHWFFPR",
+        "description": "HERWORLD FIT & FAB PRODUCTION"
+    },
+    {
+        "id":          "72",
+        "name":        "HERWORLD PHOTO & ART",
+        "code":        "DHWPA",
+        "description": "HERWORLD PHOTO & ART"
+    },
+    {
+        "id":          "73",
+        "name":        "HERWORLD PRODUCTION",
+        "code":        "DHWPR",
+        "description": "HERWORLD PRODUCTION"
+    },
+    {
+        "id":          "74",
+        "name":        "NANYOU ADVERTORIAL SALES",
+        "code":        "DNANAS",
+        "description": "NANYOU ADVERTORIAL SALES"
+    },
+    {
+        "id":          "75",
+        "name":        "NANYOU BRANDING & PROMOTION",
+        "code":        "DNANBP",
+        "description": "NANYOU BRANDING & PROMOTION"
+    },
+    {
+        "id":          "76",
+        "name":        "NANYOU EDITORIAL",
+        "code":        "DNANED",
+        "description": "NANYOU EDITORIAL"
+    },
+    {
+        "id":          "77",
+        "name":        "NANYOU PHOTO & ART",
+        "code":        "DNANPA",
+        "description": "NANYOU PHOTO & ART"
+    },
+    {
+        "id":          "78",
+        "name":        "NANYOU PRODUCTION",
+        "code":        "DNANPR",
+        "description": "NANYOU PRODUCTION"
+    },
+    {
+        "id":          "79",
+        "name":        "NUYOU ADVERTORIAL SALES",
+        "code":        "DNYAS",
+        "description": "NUYOU ADVERTORIAL SALES"
+    },
+    {
+        "id":          "80",
+        "name":        "NUYOU BRANDING & PROMOTION",
+        "code":        "DNYBP",
+        "description": "NUYOU BRANDING & PROMOTION"
+    },
+    {
+        "id":          "81",
+        "name":        "NUYOU EDITORIAL",
+        "code":        "DNYED",
+        "description": "NUYOU EDITORIAL"
+    },
+    {
+        "id":          "82",
+        "name":        "NUYOU PHOTO & ART",
+        "code":        "DNYPA",
+        "description": "NUYOU PHOTO & ART"
+    },
+    {
+        "id":          "83",
+        "name":        "NUYOU PRODUCTION",
+        "code":        "DNYPR",
+        "description": "NUYOU PRODUCTION"
+    },
+    {
+        "id":          "84",
+        "name":        "SHAPE ADVERTORIAL SALES",
+        "code":        "DSHAAS",
+        "description": "SHAPE ADVERTORIAL SALES"
+    },
+    {
+        "id":          "85",
+        "name":        "SHAPE BRANDING & PROMOTION",
+        "code":        "DSHABP",
+        "description": "SHAPE BRANDING & PROMOTION"
+    },
+    {
+        "id":          "86",
+        "name":        "SHAPE EDITORIAL",
+        "code":        "DSHAED",
+        "description": "SHAPE EDITORIAL"
+    },
+    {
+        "id":          "87",
+        "name":        "SHAPE PHOTO & ART",
+        "code":        "DSHAPA",
+        "description": "SHAPE PHOTO & ART"
+    },
+    {
+        "id":          "88",
+        "name":        "SHAPE PRODUCTION",
+        "code":        "DSHAPR",
+        "description": "SHAPE PRODUCTION"
+    },
+    {
+        "id":          "89",
+        "name":        "SIMPLY HER ADVERTORIAL SALES",
+        "code":        "DSHERAS",
+        "description": "SIMPLY HER ADVERTORIAL SALES"
+    },
+    {
+        "id":          "90",
+        "name":        "SIMPLY HER BRANDING & PROMOTION",
+        "code":        "DSHERBP",
+        "description": "SIMPLY HER BRANDING & PROMOTION"
+    },
+    {
+        "id":          "91",
+        "name":        "SIMPLY HER EDITORIAL",
+        "code":        "DSHERED",
+        "description": "SIMPLY HER EDITORIAL"
+    },
+    {
+        "id":          "92",
+        "name":        "SIMPLY HER PHOTO & ART",
+        "code":        "DSHERPA",
+        "description": "SIMPLY HER PHOTO & ART"
+    },
+    {
+        "id":          "93",
+        "name":        "SIMPLY HER PRODUCTION",
+        "code":        "DSHERPR",
+        "description": "SIMPLY HER PRODUCTION"
+    },
+    {
+        "id":          "94",
+        "name":        "CONFERENCE-MYANMAR",
+        "code":        "GSECFMY",
+        "description": "CONFERENCE-MYANMAR"
+    },
+    {
+        "id":          "95",
+        "name":        "STP - GENERAL",
+        "code":        "RSTPG",
+        "description": "STP - GENERAL"
+    },
+    {
+        "id":          "96",
+        "name":        "INFORMATION RESOURCE CENTRE",
+        "code":        "SADIR",
+        "description": "INFORMATION RESOURCE CENTRE"
+    },
+    {
+        "id":          "97",
+        "name":        "OFFICE SERVICES- HQ",
+        "code":        "SADNC",
+        "description": "OFFICE SERVICES- HQ"
+    },
+    {
+        "id":          "98",
+        "name":        "OFFICE SERVICES- OTHER CENTRES",
+        "code":        "SADOC",
+        "description": "OFFICE SERVICES- OTHER CENTRES"
+    },
+    {
+        "id":          "99",
+        "name":        "SECURITY & SAFETY",
+        "code":        "SADSS",
+        "description": "SECURITY & SAFETY"
+    },
+    {
+        "id":          "100",
+        "name":        "BERITA HARIAN EDITORIAL",
+        "code":        "SEMBH",
+        "description": "BERITA HARIAN EDITORIAL"
+    },
+    {
+        "id":          "101",
+        "name":        "BUSINESS TIMES EDITORIAL",
+        "code":        "SEMBT",
+        "description": "BUSINESS TIMES EDITORIAL"
+    },
+    {
+        "id":          "102",
+        "name":        "DIGITAL MEDIA UNIT",
+        "code":        "SEMDM",
+        "description": "DIGITAL MEDIA UNIT"
+    },
+    {
+        "id":          "103",
+        "name":        "EDITORIAL SUPPORT",
+        "code":        "SEMES",
+        "description": "EDITORIAL SUPPORT"
+    },
+    {
+        "id":          "104",
+        "name":        "BT-INC",
+        "code":        "SEMIN",
+        "description": "BT-INC"
+    },
+    {
+        "id":          "105",
+        "name":        "SPECIAL PROJECTS",
+        "code":        "SEMSP",
+        "description": "SPECIAL PROJECTS"
+    },
+    {
+        "id":          "106",
+        "name":        "STRAITS TIMES EDITORIAL",
+        "code":        "SEMST",
+        "description": "STRAITS TIMES EDITORIAL"
+    },
+    {
+        "id":          "107",
+        "name":        "BUZZ",
+        "code":        "SFIBZ",
+        "description": "BUZZ"
+    },
+    {
+        "id":          "108",
+        "name":        "CORPORATE OFFICE",
+        "code":        "SFICO",
+        "description": "CORPORATE OFFICE"
+    },
+    {
+        "id":          "109",
+        "name":        "CORPORATE PLANNING",
+        "code":        "SFICP",
+        "description": "CORPORATE PLANNING"
+    },
+    {
+        "id":          "110",
+        "name":        "CORPORATE SERVICES",
+        "code":        "SFICS",
+        "description": "CORPORATE SERVICES"
+    },
+    {
+        "id":          "111",
+        "name":        "DCG 701 SEARCH",
+        "code":        "SFIDS",
+        "description": "DCG 701 SEARCH"
+    },
+    {
+        "id":          "112",
+        "name":        "EXHIBITION AND EVENTS",
+        "code":        "SFIEE",
+        "description": "EXHIBITION AND EVENTS"
+    },
+    {
+        "id":          "113",
+        "name":        "FINANCIAL SERVICES",
+        "code":        "SFIFP",
+        "description": "FINANCIAL SERVICES"
+    },
+    {
+        "id":          "114",
+        "name":        "GRP REPORTING/COMPLIANCE&GRP SHARED SVCS",
+        "code":        "SFIGC",
+        "description": "GRP REPORTING/COMPLIANCE&GRP SHARED SVCS"
+    },
+    {
+        "id":          "115",
+        "name":        "GROUP SERVICES",
+        "code":        "SFIGS",
+        "description": "GROUP SERVICES"
+    },
+    {
+        "id":          "116",
+        "name":        "GROWTH THRUST",
+        "code":        "SFIGT",
+        "description": "GROWTH THRUST"
+    },
+    {
+        "id":          "117",
+        "name":        "MAGAZINES",
+        "code":        "SFIMA",
+        "description": "MAGAZINES"
+    },
+    {
+        "id":          "118",
+        "name":        "MAGAZINES & GROWTH THRUST",
+        "code":        "SFIMG",
+        "description": "MAGAZINES & GROWTH THRUST"
+    },
+    {
+        "id":          "119",
+        "name":        "MANAGEMENT",
+        "code":        "SFIMN",
+        "description": "MANAGEMENT"
+    },
+    {
+        "id":          "120",
+        "name":        "NEWSPAPERS & DIGITAL",
+        "code":        "SFIND",
+        "description": "NEWSPAPERS & DIGITAL"
+    },
+    {
+        "id":          "121",
+        "name":        "NEWSPAPER OPERATIONS",
+        "code":        "SFINP",
+        "description": "NEWSPAPER OPERATIONS"
+    },
+    {
+        "id":          "122",
+        "name":        "NEWSPAPERS",
+        "code":        "SFINW",
+        "description": "NEWSPAPERS"
+    },
+    {
+        "id":          "123",
+        "name":        "OTHER OPERATIONS",
+        "code":        "SFIOO",
+        "description": "OTHER OPERATIONS"
+    },
+    {
+        "id":          "124",
+        "name":        "PROJECTS",
+        "code":        "SFIPR",
+        "description": "PROJECTS"
+    },
+    {
+        "id":          "125",
+        "name":        "PAYROLL",
+        "code":        "SFIPY",
+        "description": "PAYROLL"
+    },
+    {
+        "id":          "126",
+        "name":        "SHARE INVESTOR",
+        "code":        "SFISI",
+        "description": "SHARE INVESTOR"
+    },
+    {
+        "id":          "127",
+        "name":        "SPH & SUBSIDIARIES ACCOUNTS",
+        "code":        "SFISS",
+        "description": "SPH & SUBSIDIARIES ACCOUNTS"
+    },
+    {
+        "id":          "128",
+        "name":        "TREASURY",
+        "code":        "SFITR",
+        "description": "TREASURY"
+    },
+    {
+        "id":          "129",
+        "name":        "DATA CENTRE OPERATIONS",
+        "code":        "SITDC",
+        "description": "DATA CENTRE OPERATIONS"
+    },
+    {
+        "id":          "130",
+        "name":        "MANAGEMENT/ADMINISTRATION",
+        "code":        "SITMT",
+        "description": "MANAGEMENT/ADMINISTRATION"
+    },
+    {
+        "id":          "131",
+        "name":        "PUBLISHING SYSTEMS",
+        "code":        "SITPS",
+        "description": "PUBLISHING SYSTEMS"
+    },
+    {
+        "id":          "132",
+        "name":        "TECHNOLOGY DEVELOPMENT",
+        "code":        "SITTD",
+        "description": "TECHNOLOGY DEVELOPMENT"
+    },
+    {
+        "id":          "133",
+        "name":        "ADVERTISING & PROMOTIONS",
+        "code":        "SMKAP",
+        "description": "ADVERTISING & PROMOTIONS"
+    },
+    {
+        "id":          "134",
+        "name":        "AUDIOTEX & INTERACTIVE MEDIA",
+        "code":        "SMKAU",
+        "description": "AUDIOTEX & INTERACTIVE MEDIA"
+    },
+    {
+        "id":          "135",
+        "name":        "PRINT CLASSIFIED",
+        "code":        "SMKCL",
+        "description": "PRINT CLASSIFIED"
+    },
+    {
+        "id":          "136",
+        "name":        "CREATIVE SERVICES",
+        "code":        "SMKCRS",
+        "description": "CREATIVE SERVICES"
+    },
+    {
+        "id":          "137",
+        "name":        "CUSTOMER SERVICE",
+        "code":        "SMKCS",
+        "description": "CUSTOMER SERVICE"
+    },
+    {
+        "id":          "138",
+        "name":        "INTEGRATED SALES",
+        "code":        "SMKDA",
+        "description": "INTEGRATED SALES"
+    },
+    {
+        "id":          "139",
+        "name":        "DISPLAY",
+        "code":        "SMKDIS",
+        "description": "DISPLAY"
+    },
+    {
+        "id":          "140",
+        "name":        "SPHMBO",
+        "code":        "SMKMB",
+        "description": "SPHMBO"
+    },
+    {
+        "id":          "141",
+        "name":        "MARKETING PLANNING & DEVT",
+        "code":        "SMKMP",
+        "description": "MARKETING PLANNING & DEVT"
+    },
+    {
+        "id":          "142",
+        "name":        "NEW MEDIA",
+        "code":        "SMKNM",
+        "description": "NEW MEDIA"
+    },
+    {
+        "id":          "143",
+        "name":        "OVERSEAS AD SALES",
+        "code":        "SMKOA",
+        "description": "OVERSEAS AD SALES"
+    },
+    {
+        "id":          "144",
+        "name":        "PRODUCT DEVELOPMENT & BRANDING",
+        "code":        "SMKPB",
+        "description": "PRODUCT DEVELOPMENT & BRANDING"
+    },
+    {
+        "id":          "145",
+        "name":        "PRISM",
+        "code":        "SMKPR",
+        "description": "PRISM"
+    },
+    {
+        "id":          "146",
+        "name":        "RESEARCH, ANALYSIS & PLANNING DEPT",
+        "code":        "SMKRA",
+        "description": "RESEARCH, ANALYSIS & PLANNING DEPT"
+    },
+    {
+        "id":          "147",
+        "name":        "RECRUITMENT & CORPORATE ADVERT",
+        "code":        "SMKRC",
+        "description": "RECRUITMENT & CORPORATE ADVERT"
+    },
+    {
+        "id":          "148",
+        "name":        "RETAIL",
+        "code":        "SMKRL",
+        "description": "RETAIL"
+    },
+    {
+        "id":          "149",
+        "name":        "SHANGHAI OFFICE",
+        "code":        "SMKSH",
+        "description": "SHANGHAI OFFICE"
+    },
+    {
+        "id":          "150",
+        "name":        "STRATEGIC MARKETING",
+        "code":        "SMKSM",
+        "description": "STRATEGIC MARKETING"
+    },
+    {
+        "id":          "151",
+        "name":        "MARKETING SPECIAL PROJECTS",
+        "code":        "SMKSPE",
+        "description": "MARKETING SPECIAL PROJECTS"
+    },
+    {
+        "id":          "152",
+        "name":        "ST701",
+        "code":        "SMKST",
+        "description": "ST701"
+    },
+    {
+        "id":          "153",
+        "name":        "TOM OUTDOOR MEDIA GROUP",
+        "code":        "SMKTO",
+        "description": "TOM OUTDOOR MEDIA GROUP"
+    },
+    {
+        "id":          "154",
+        "name":        "WEBVOICE/AUDIOTEX & NEWSLINK",
+        "code":        "SMKWE",
+        "description": "WEBVOICE/AUDIOTEX & NEWSLINK"
+    },
+    {
+        "id":          "155",
+        "name":        "PROPERTY SERVICES",
+        "code":        "SNSPRS",
+        "description": "PROPERTY SERVICES"
+    },
+    {
+        "id":          "156",
+        "name":        "ADMINISTRATION",
+        "code":        "SPDAD",
+        "description": "ADMINISTRATION"
+    },
+    {
+        "id":          "157",
+        "name":        "ENGINEERING MC",
+        "code":        "SPDEN",
+        "description": "ENGINEERING MC"
+    },
+    {
+        "id":          "158",
+        "name":        "MATERIALS",
+        "code":        "SPDMW",
+        "description": "MATERIALS"
+    },
+    {
+        "id":          "159",
+        "name":        "OPERATIONS MC",
+        "code":        "SPDOP",
+        "description": "OPERATIONS MC"
+    },
+    {
+        "id":          "160",
+        "name":        "PRE-PRESS",
+        "code":        "SPDPP",
+        "description": "PRE-PRESS"
+    },
+    {
+        "id":          "161",
+        "name":        "PROCESS",
+        "code":        "SPDPR",
+        "description": "PROCESS"
+    },
+    {
+        "id":          "162",
+        "name":        "QUALITY CONTROL",
+        "code":        "SPDQC",
+        "description": "QUALITY CONTROL"
+    },
+    {
+        "id":          "163",
+        "name":        "Engineering GL",
+        "code":        "ENGGL",
+        "description": "Engineering GL"
+    },
+    {
+        "id":          "164",
+        "name":        "Engineering PC",
+        "code":        "ENGPC",
+        "description": "Engineering PC"
+    },
+    {
+        "id":          "165",
+        "name":        "Engineering Dept",
+        "code":        "ENGR",
+        "description": "Engineering Dept"
+    },
+    {
+        "id":          "166",
+        "name":        "*Engineering Dept - Genting Lane",
+        "code":        "ENGRNC",
+        "description": "*Engineering Dept - Genting Lane"
+    },
+    {
+        "id":          "167",
+        "name":        "*Engineering Dept",
+        "code":        "ENGRPC",
+        "description": "*Engineering Dept"
+    },
+    {
+        "id":          "168",
+        "name":        "*Materials -Genting Lane",
+        "code":        "MAQCNC",
+        "description": "*Materials -Genting Lane"
+    },
+    {
+        "id":          "169",
+        "name":        "*Materials - Print Centre",
+        "code":        "MAQCPC",
+        "description": "*Materials - Print Centre"
+    },
+    {
+        "id":          "170",
+        "name":        "Materials GL",
+        "code":        "MATGL",
+        "description": "Materials GL"
+    },
+    {
+        "id":          "171",
+        "name":        "Materials PC",
+        "code":        "MATPC",
+        "description": "Materials PC"
+    },
+    {
+        "id":          "172",
+        "name":        "Production - Operations GL",
+        "code":        "OPSGL",
+        "description": "Production - Operations GL"
+    },
+    {
+        "id":          "173",
+        "name":        "Production - Operations PC",
+        "code":        "OPSPC",
+        "description": "Production - Operations PC"
+    },
+    {
+        "id":          "174",
+        "name":        "Production - Plant Admin PC",
+        "code":        "PADPC",
+        "description": "Production - Plant Admin PC"
+    },
+    {
+        "id":          "175",
+        "name":        "Production - Mailroom",
+        "code":        "PRMA",
+        "description": "Production - Mailroom"
+    },
+    {
+        "id":          "176",
+        "name":        "*Production - Mailroom",
+        "code":        "PRMANC",
+        "description": "*Production - Mailroom"
+    },
+    {
+        "id":          "177",
+        "name":        "*Production - Mailroom",
+        "code":        "PRMAPC",
+        "description": "*Production - Mailroom"
+    },
+    {
+        "id":          "178",
+        "name":        "*Production - Plant Admin",
+        "code":        "PRPA",
+        "description": "*Production - Plant Admin"
+    },
+    {
+        "id":          "179",
+        "name":        "*Production - Plant Admin NC",
+        "code":        "PRPANC",
+        "description": "*Production - Plant Admin NC"
+    },
+    {
+        "id":          "180",
+        "name":        "*Production - Plant Admin PC",
+        "code":        "PRPAPC",
+        "description": "*Production - Plant Admin PC"
+    },
+    {
+        "id":          "181",
+        "name":        "*Production - Prepress",
+        "code":        "PRPPNC",
+        "description": "*Production - Prepress"
+    },
+    {
+        "id":          "182",
+        "name":        "*Production - Prepress",
+        "code":        "PRPPPC",
+        "description": "*Production - Prepress"
+    },
+    {
+        "id":          "183",
+        "name":        "*Production - Printing",
+        "code":        "PRPR",
+        "description": "*Production - Printing"
+    },
+    {
+        "id":          "184",
+        "name":        "*Production - Operations Genting Lane",
+        "code":        "PRPRNC",
+        "description": "*Production - Operations Genting Lane"
+    },
+    {
+        "id":          "185",
+        "name":        "*Production - Operations Print Centre",
+        "code":        "PRPRPC",
+        "description": "*Production - Operations Print Centre"
+    },
+    {
+        "id":          "186",
+        "name":        "*Production - Process",
+        "code":        "PRPS",
+        "description": "*Production - Process"
+    },
+    {
+        "id":          "187",
+        "name":        "Please See the PDF attched below for Delivery Details",
+        "code":        "121212",
+        "description": ""
+    }
+]
