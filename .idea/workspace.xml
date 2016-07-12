@@ -25,9 +25,7 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f98961c1-c0f2-4f62-aecc-dc991c374bf9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="f98961c1-c0f2-4f62-aecc-dc991c374bf9" name="Default" comment="" />
     <ignored path="guess.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -398,7 +396,7 @@
       <workItem from="1468179368378" duration="5342000" />
       <workItem from="1468255919781" duration="15202000" />
       <workItem from="1468333065512" duration="7352000" />
-      <workItem from="1468350839474" duration="89000" />
+      <workItem from="1468350839474" duration="519000" />
     </task>
     <servers />
   </component>
@@ -435,7 +433,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61108000" />
+    <option name="totallyTimeSpent" value="61538000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="1" width="1922" height="1054" extended-state="6" />
@@ -817,12 +815,12 @@
         <state relative-caret-position="672">
           <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
           <folding>
-            <element signature="e#63#131#0#PHP" expanded="true" />
-            <element signature="e#436#824#0#PHP" expanded="true" />
-            <element signature="e#1220#1557#0#PHP" expanded="true" />
-            <element signature="e#1942#2330#0#PHP" expanded="true" />
-            <element signature="e#2612#2986#0#PHP" expanded="true" />
-            <element signature="e#3814#4062#0#PHP" expanded="true" />
+            <element signature="e#63#131#0#PHP" expanded="false" />
+            <element signature="e#436#824#0#PHP" expanded="false" />
+            <element signature="e#1220#1557#0#PHP" expanded="false" />
+            <element signature="e#1942#2330#0#PHP" expanded="false" />
+            <element signature="e#2612#2986#0#PHP" expanded="false" />
+            <element signature="e#3814#4062#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -840,7 +838,7 @@
         <state relative-caret-position="-560">
           <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
           <folding>
-            <element signature="e#716#791#0#PHP" expanded="true" />
+            <element signature="e#716#791#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -850,7 +848,7 @@
         <state relative-caret-position="576">
           <caret line="40" column="63" selection-start-line="40" selection-start-column="63" selection-end-line="40" selection-end-column="63" />
           <folding>
-            <element signature="e#59#126#0#PHP" expanded="true" />
+            <element signature="e#59#126#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
